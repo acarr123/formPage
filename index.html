@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Young+Serif&display=swap" rel="stylesheet">
+    <title>Form page</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="hero-image">
+            <div class="logo-wrapper">
+                <div class="hero-logo">To the Heights</div>
+            </div>
+        </div>
+        <div class="right-side">
+        <div class="description">
+            <p> This is not a real online service! You know you need something like this in your life to help you realize
+                your deepest dreams. <br>Sign up <em>now</em> to get started.
+            </p>
+            <p>You <em> know </em> you want to.</p>
+        </div>
+        
+        <form action="#" method="post">
+            <div class="form-wrapper">
+                <div>
+                    <p class="start">Let's do this!</p>
+                </div>
+                <fieldset>
+                    <div class="box">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name" required autocomplete="given-name"> 
+                    </div>
+                    <div class="box">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" required autocomplete="family-name">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="box">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" required autocomplete="email">
+                    </div>
+                    <div class="box">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="tel" name="phone_number" id="phone_number">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="box">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="box">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" name="confirm_password" id="confirm_password">
+                    </div>
+                </fieldset>
+            </div>
+            <div class="box">
+                <button type="submit">Create Account</button>
+            </div>
+        </form>
+
+        </div>
+    </div>
+    <figcaption class="photo-credit">Photo by <a href="https://unsplash.com/@dylanshaw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dylan Shaw</a> on <a href="https://unsplash.com/photos/two-people-standing-on-a-cliff-overlooking-a-body-of-water-9LzlcKq3Kyw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    </figcaption>
+
+</body>
+</html>

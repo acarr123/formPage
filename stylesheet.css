@@ -1,0 +1,135 @@
+
+html, body{
+    height: 100%;
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #333, #333 10%, #eee,  #333)
+}
+input, label, button, fieldset {
+    display: block;
+    box-sizing: border-box;
+    background: none;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: minmax(400px, 300px) 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 5px 3px 5px -3px rgba(0, 0, 0, .5);
+    overflow: hidden;
+    background-color: rgb(249, 252, 255);
+}
+.hero-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("images/dylan-shaw-lfnsZ1Ylu3Y-unsplash.jpg");
+    /* Set a specific height */
+    height: 100%;
+    width: minmax(400px, 300px);
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    grid-row: span 3;
+    }
+.logo-wrapper{
+    background: rgba(0, 0, 0, .5);
+    height: 100px;
+    width: max(200px,100%);
+    position: relative;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+}
+.hero-logo {
+    font-family: "Young Serif", sans-serif;
+    color: azure;
+    letter-spacing: .1rem;
+    font-size: large;
+    position: relative;
+    top: 40%;
+}
+
+.photo-credit{
+    font-size: 12px;
+    display: flex;
+    justify-self: flex-start;
+    color: antiquewhite;
+}
+a {
+    color: antiquewhite;
+}
+
+.right-side{
+    display: flex;
+    flex-flow: column;
+}
+.description{
+    padding-left: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: larger;
+    font-weight: bolder;
+    
+}
+
+.start{
+    font-size: large;
+    padding-left: 3rem;
+}
+form{
+    grid-column-start: 2;
+    margin-right: -1em;
+}
+
+.form-wrapper{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgba(255, 255, 255, 0.794);
+    margin-bottom: 2rem;
+    padding: 2em 0;
+}
+
+fieldset{
+    border:none;
+    display: flex;
+}
+label{
+    font-size: small;
+}
+
+input{
+    border: solid #E5E7EB;
+}
+.box{
+    margin-left: 2em;
+}
+input:focus, input:hover{
+    box-shadow: rgba(0, 0, 0, .5) 0px 5px 15px;
+    border: solid lightblue;
+}
+button {
+    padding: 5px 15px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, .5);
+    font-family: "Young Serif";
+    will-change: transform;
+    margin-left: 1em;
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition-duration: 100ms;
+}
